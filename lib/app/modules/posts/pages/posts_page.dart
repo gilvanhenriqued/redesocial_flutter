@@ -36,8 +36,22 @@ class _PostsPageState extends ModularState<PostsPage, PostsController> {
               return Column(
                 children: <Widget>[
                   ListTile(
-                    title: Text(list[index].title),
-                    subtitle: Text(list[index].body),
+                    title: Text(
+                      list[index].title,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    subtitle: Text(
+                      list[index].body,
+                      style: TextStyle(),                      
+                    ),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    leading: Icon(
+                      Icons.account_circle, 
+                      color: Colors.blue,
+                      size: 40,
+                    ),
                     onTap: () {
                       Modular.link.pushNamed('/comments/${list[index].id}');
                     },

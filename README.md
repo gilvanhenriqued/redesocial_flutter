@@ -1,17 +1,39 @@
-# redesocial_flutter
+# Rede Social
 
-A new Flutter project. Created by Slidy
+Aplicação *mobile* desenvolvida com Flutter para simular uma rede social consumindo uma *API* que apresenta publicações e comentários.
 
-## Getting Started
+## Screenchots do Aplicativo
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+> Imagens das 3 páginas do aplicativo.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Tecnologias utilizadas:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# redesocial_flutter
+#### API
+- [API de Posts](https://jsonplaceholder.typicode.com/posts)
+- [API de Comentários](https://jsonplaceholder.typicode.com/comments)
+
+#### Gerenciamento de Estado Flutter
+- [MobX](https://pub.dev/packages/mobx)
+
+#### Arquitetura Modular e Roteamento
+- [Flutter Modular](https://pub.dev/packages/flutter_modular)
+
+#### Cliente HTTP para consumo de API
+- [Dio](https://pub.dev/packages/dio)
+
+#### CLI para auxiliar no desenvolvimento
+- [Slidy](https://pub.dev/packages/slidy)
+
+## Arquitetura
+O projeto é composto por dois módulos: o *app_module* é responsável apenas por iniciar a homepage e direcionar o usuário para o módulo de posts. O *PostsModule* é composto por cinco artefatos: 
+- *posts_module*: módulo de controle do *flutter modular*;
+- *posts_repository_interface*: interface do repositório de *posts* com as funções que deverão ser implementadas;
+- *posts_repository*: classe que realiza o consumo da *API* com o cliente *HTTP Dio*.
+- *posts_controller*:  classe que desenvolve o controle de estado com o pacote *MobX* implementando os *observers* e as *actions*;
+- *posts_page*: widget que lista as publicações registradas na API e quando um post é clicado, direciona o usuário para os respectivos comentários;
+- *comments_page*: *widget* que lista os comentários de um determinado post.
+
+Além dos artefatos do módulo, existem ainda as pastas *models* e shared.
+- *Models*: contém os esquemas das duas entidades do sistema: *Posts* e *Comments*. Possui também funções para preparar os dados que são recebidos em formato *JSON*;
+- *Shared*: contém arquivos que podem ser compartilhados em toda a aplicação. Nesse caso, existe uma classe com a *URL* base para a *API* que está sendo consumida.

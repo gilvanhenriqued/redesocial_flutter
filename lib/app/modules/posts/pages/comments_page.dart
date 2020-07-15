@@ -42,7 +42,12 @@ class _CommentsPageState
               return Column(
                 children: <Widget>[
                   ListTile(
-                    title: Text(list[index].email),
+                    title: Text(
+                      list[index].email,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     subtitle: Text(list[index].body),
                   ),
                   Divider(),

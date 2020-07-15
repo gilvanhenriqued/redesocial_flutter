@@ -16,7 +16,6 @@ abstract class _PostsControllerBase with Store {
   @observable
   ObservableList<Comment> commentList;
 
-
   _PostsControllerBase(this.repository) {
     loadPosts();
   }
@@ -24,13 +23,11 @@ abstract class _PostsControllerBase with Store {
   @action
   loadPosts() async {
     postList = ObservableList<Post>.of(await repository.getAllPosts());
-    //postList = repository.getAllPosts().asObservable();
   }
 
   @action
   loadComments({String idPost}) async {
     commentList = ObservableList.of(await repository.getComments(idPost));
-    // commentList = repository.getComments(idPost).asObservable();
   }
 
 }
