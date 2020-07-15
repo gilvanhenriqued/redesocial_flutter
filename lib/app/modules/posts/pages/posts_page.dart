@@ -5,7 +5,7 @@ import '../posts_controller.dart';
 
 class PostsPage extends StatefulWidget {
   final String title;
-  const PostsPage({Key key, this.title = "Posts"}) : super(key: key);
+  const PostsPage({Key key, this.title = "Publicações"}) : super(key: key);
 
   @override
   _PostsPageState createState() => _PostsPageState();
@@ -39,7 +39,7 @@ class _PostsPageState extends ModularState<PostsPage, PostsController> {
                     title: Text(list[index].title),
                     subtitle: Text(list[index].body),
                     onTap: () {
-                      Modular.link.pushNamed('/comments/${list[index].userId}');
+                      Modular.link.pushNamed('/comments/${list[index].id}');
                     },
                   ),
                   Divider(),

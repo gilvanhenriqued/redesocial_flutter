@@ -7,7 +7,7 @@ class CommentsPage extends StatefulWidget {
   final String title;
   final String idPost;
 
-  const CommentsPage({Key key, this.title = "Comments", this.idPost}) : super(key: key);
+  const CommentsPage({Key key, this.title = "Comentários da Publicação", this.idPost}) : super(key: key);
 
   @override
   _CommentsPageState createState() => _CommentsPageState();

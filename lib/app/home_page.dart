@@ -18,7 +18,7 @@ class _HomePageState extends ModularState<HomePage, AppController> {
       body: Stack(
         children: <Widget>[
           Align(
-            alignment: Alignment.bottomCenter,
+            alignment: Alignment.center,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
@@ -28,18 +28,18 @@ class _HomePageState extends ModularState<HomePage, AppController> {
                   size: 80,
                 ),
                 Text(
-                  'Caderno Virtual',
+                  'Rede Social',
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.w300),
                 ),
                 SizedBox(
-                  height: 120,
+                  height: 150,
                 ),
                 Text(
                   'Seja bem vindo!',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w300),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 32, bottom: 16),
+                  margin: EdgeInsets.only(top: 50, bottom: 16),
                   decoration: BoxDecoration(
                     color: Colors.blue[600],
                     shape: BoxShape.rectangle,
