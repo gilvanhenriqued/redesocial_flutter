@@ -3,7 +3,7 @@
 Aplicação *mobile* desenvolvida com Flutter para simular uma rede social consumindo uma *API* que apresenta publicações e comentários.
 
 ## Screenchots do Aplicativo
-[![Screenshots do APP](https://imgur.com/a/4LwKNpg "Screenshots do APP")](https://imgur.com/a/4LwKNpg "Screenshots do APP")
+[![Screenshots do APP.](https://i.imgur.com/Lo8kcRZ.jpg "Screenshots do APP.")](https://i.imgur.com/Lo8kcRZ.jpg "Screenshots do APP.")
 > Imagens das 3 páginas do aplicativo.
 
 ## Tecnologias utilizadas:
