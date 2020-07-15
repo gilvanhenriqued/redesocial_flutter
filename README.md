@@ -3,8 +3,7 @@
 Aplicação *mobile* desenvolvida com Flutter para simular uma rede social consumindo uma *API* que apresenta publicações e comentários.
 
 ## Screenchots do Aplicativo
-
-
+[![Screenshots do APP](https://imgur.com/a/4LwKNpg "Screenshots do APP")](https://imgur.com/a/4LwKNpg "Screenshots do APP")
 > Imagens das 3 páginas do aplicativo.
 
 ## Tecnologias utilizadas:
@@ -37,3 +36,12 @@ O projeto é composto por dois módulos: o *app_module* é responsável apenas p
 Além dos artefatos do módulo, existem ainda as pastas *models* e shared.
 - *Models*: contém os esquemas das duas entidades do sistema: *Posts* e *Comments*. Possui também funções para preparar os dados que são recebidos em formato *JSON*;
 - *Shared*: contém arquivos que podem ser compartilhados em toda a aplicação. Nesse caso, existe uma classe com a *URL* base para a *API* que está sendo consumida.
+
+## Procedimento para testar
+ Com o Flutter instalado em sua máquina, ao abrir o projeto, para baixar as dependências usadas no projeto basta executar:
+
+`$ flutter pub get`
+
+Para executar em um emulador ou dispositivo, execute o comando:
+
+`$ flutter run`
