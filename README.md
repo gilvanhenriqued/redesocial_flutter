@@ -45,3 +45,5 @@ Além dos artefatos do módulo, existem ainda as pastas *models* e shared.
 Para executar em um emulador ou dispositivo, execute o comando:
 
 `$ flutter run`
+
+Thank you for your attention! See too my [Flutter project](https://github.com/gilvanhenriqued/catalogo_auth_flutter) about user authentication with token... 
